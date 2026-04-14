@@ -28,13 +28,13 @@ The controller learns IP-to-MAC mappings and responds directly to ARP requests u
 ## Network Topology
 
 A simple single-switch topology is used:
-
+```
 h1 ----\
          \
 h2 ------ s1 ------ Controller
          /
 h3 ----/
-
+```
 ## Setup and Execution
 
 ### Step 1: Start Controller

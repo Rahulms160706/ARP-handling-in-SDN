@@ -95,17 +95,25 @@ sudo ovs-ofctl -O OpenFlow13 dump-flows s1
 
 ## Screenshots / Proof of Execution
 
-### ARP Logs (Learning + Proxy ARP)
+### ARP Learning & Proxy ARP
+Shows controller learning IP-MAC mappings and replying using Proxy ARP.
+![ARP Logs](images/arp_logs.png)
 
+### Normal Communication
+All hosts communicate successfully (0% packet loss).
+![Ping Normal](images/ping_normal.png)
 
-### Ping Results (0% Packet Loss)
+### Failure Scenario
+One host is disabled, resulting in packet loss.
+![Ping Failure](images/ping_failure.png)
 
+### Throughput using iperf
+Shows bandwidth between hosts.
+![Iperf](images/iperf.png)
 
-### Flow Table (Match–Action Rules)
-
-
-### Iperf Output (Throughput)
-
+### Flow Table
+Shows match-action rules installed in switch.
+![Flow Table](images/flow_table.png)
 
 ## Conclusion
 

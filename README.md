@@ -54,8 +54,7 @@ ryu-manager arp_controller.py
 
 ### Step 2: Start Mininet
 ```
-sudo mn --controller=remote,ip=127.0.0.1,port=6653
---switch ovsk,protocols=OpenFlow13 --topo single,3
+sudo mn --controller=remote,ip=127.0.0.1,port=6653 --switch ovsk,protocols=OpenFlow13 --topo single,3
 ```
 
 ### Step 3: Test Connectivity
